@@ -1,8 +1,12 @@
 /*==========MY COLOR PALETTE !! ============*/
 :root{
-    --color-for-header: #9adcff;
+    --color-for-header: #22b6b9e0;
+    --color-for-phone-menu:  #000000e0;
     --color-for-main: #c1fff9;
     --color-for-footer: #a2d7cc;
+    --color-for-cursor-main: #3d7874;
+    --color-for-cursor-border: #5ecbc4;
+    --color-for-cursor-dot: #ffffff;
 
     --text-color: #000000;
 }
@@ -27,6 +31,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    cursor: none;
 }
 
 main{
@@ -40,6 +45,38 @@ footer{
     margin-top: 0%;
 
 }
+.photos,
+.videos,
+.web,
+.game{
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 11vh;
+    background-color: var(--color-for-header);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-weight:bolder;
+    padding: 0 100px;
+}
+.menu{
+    height: 11vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.menu div{
+    padding: 10px 25px;
+}
+.menu div:hover{
+    color: white;
+    transition: color 0.5s;
+
+}
 
 /*============================================= */
 
@@ -51,56 +88,108 @@ footer{
 /*============== ALL DECORATION  ============== */
 /*============================================= */
 
+/*-----MY CURSOR-------*/
+.own-cursor{
+    height: 50px;
+    width: 50px;
+    background-color: var(--color-for-cursor-main);
+    border: 2px solid var(--color-for-cursor-border);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 50%;
+    opacity: 68%;
+    
+    position: fixed;
+    top: -25px;
+    left: -25px;
 
+    transition: translate 0.1s ease-out;
+    
+    pointer-events: none;
+   
+}
+.own-cursor::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    
+    transform: translate(-50%, -50%);
 
-/*=============PHONE SETUP ===========*/
+    background-color: var(--color-for-cursor-dot);
+    
+}
 
-@media  screen and (min-width: 500px) {
-    .menu{
+/*---------MAIN PAGE DECORATION ---------*/
+.mainmenu main{
     display: flex;
     flex-direction: column;
-    height: 30vh;
-    width: 100vw;
-    justify-content:space-around;
     align-items: center;
-    background-color:var(--color-for-header);
+}
+img{
+    border-radius: 20%;
+box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
+}
 
-    position: fixed;
 
-    transform: translateX(-100%);
-    transition: transform 500ms cubic-bezier(0.215, 0.610, 0.355, 1);
-   
+
+/*=============RESPONSIVE SCREEN ===========*/
+/*============================================= */
+
+
+
+/*===============COMPUTER ==========*/
+@media  screen and (max-width: 1770px) {
+    header{
+        padding: 0 70px;
+    }
+}
+
+/*===============COMPUTER OR TABLET 2==========*/
+@media  screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
     }
 
-    /* #id-checkbox > .material-symbols-outlined{
-        rotate: ;
-    } */
+}
 
-    #id-checkbox:checked ~ .menu{
-        transform: translateX(0);
+
+/*===============TABLET ==========*/
+@media screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
     }
+    
+}
 
-    #id-checkbox{
-        display:none;
+
+/*===============TABLET==========*/
+@media screen and (max-width: 700px){
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .burger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0 ;
+    }
+    .menu{
+        display: none;
+        top: 11vh;
+        left: 0;
+        position: absolute;
+        height: 30vh;
+        width: 100%;
+        background-color:var(--color-for-phone-menu) ;
+        color: white;
+        transition: 0.75s ;
+        flex-direction: column;
     }
 
 }
 /*==================================*/
 
-
-
-
-/*============= TABLET AND PC SETUP ===========*/
-
-@media  screen and (min-width: 600px) {
-    .menu{
-    display: flex;
-    flex-direction:row;
-    height: 10vh;
-    position: fixed;
-    
-
-    }
-
-
-}
