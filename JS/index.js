@@ -67,15 +67,6 @@ function loadGamePage(){
    videoPage.style.display = "none";
 }
 
-//PART OF THE MENU BAR CLICK FOR PHONE
-let menuBarToclick = document.querySelector(".burger");
-let mainMenu = document.querySelector(".menu");
-
-menuBarToclick.addEventListener('click', showMenu);
-
-function showMenu(){
-    mainMenu.style.display = "flex";
-}
 
 //MAKING THE CURSOR MOVE FIRST
 let myCursor = document.querySelector(".own-cursor");

@@ -7,6 +7,7 @@
     --color-for-cursor-main: #3d7874;
     --color-for-cursor-border: #5ecbc4;
     --color-for-cursor-dot: #ffffff;
+    --color-for-pictures-hover: #71ecff;
 
     --text-color: #000000;
 }
@@ -74,8 +75,20 @@ header {
 }
 .menu div:hover{
     color: white;
-    transition: color 0.5s;
+    transition: color 0.5s background-color 0.5s;
+    background-color: darkslategray;
 
+}
+
+img{
+    max-width: 70%;
+}
+
+#check{
+    display: none;
+}
+.clicking-bar{
+    display: none;
 }
 
 /*============================================= */
@@ -129,7 +142,7 @@ header {
     align-items: center;
 }
 img{
-    border-radius: 20%;
+    border-radius: 2%;
 box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
 }
 
@@ -144,6 +157,12 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    height: auto;
+    width: 100%;
+}
+.pictures:hover{
+    background-color:var(--color-for-pictures-hover);
+    transition: background-color 1.2s;
 }
 
 
@@ -158,6 +177,7 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     flex-direction: column;
     padding: 2rem 2rem;
     align-items: center;
+   
 }
 
 
@@ -189,23 +209,14 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
         padding: 0 30px;
     }
     
+    
 }
 
 
 /*===============TABLET==========*/
 @media screen and (max-width: 700px){
-    .burger{
-        display: block;
-        cursor: pointer;
-    }
-    .burger .line{
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 6px 0 ;
-    }
+   
     .menu{
-        display: none;
         top: 11vh;
         left: 0;
         position: absolute;
@@ -213,10 +224,18 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
         width: 100%;
         background-color:var(--color-for-phone-menu) ;
         color: white;
-        transition: 0.75s ;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-out;
         flex-direction: column;
     }
 
+    .clicking-bar{
+        display: block;
+    }
+
+    #check:checked ~ .menu{
+        transform: translateX(0%);
+    }
 }
 /*==================================*/
 
