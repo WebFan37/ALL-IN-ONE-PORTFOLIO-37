@@ -33,6 +33,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
     cursor: none;
+    font-size: clamp(12px, 14px, 1rem);
+    
 }
 
 main{
@@ -194,6 +196,8 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     flex-direction: column;
     align-items: center;
     padding: 2rem 2rem;
+    background-image: url(../Medias/image-contact-background.jpg);
+    
 }
 .contact h3{
     padding-bottom: 4rem;
@@ -235,6 +239,7 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
 /*===============TABLET==========*/
 @media screen and (max-width: 700px){
    
+    
     .menu{
         top: 11vh;
         left: 0;
