@@ -65,6 +65,7 @@ header {
     align-items: center;
     font-weight:bolder;
     padding: 0 100px;
+    position: fixed;
 }
 .menu{
     height: 11vh;
@@ -93,6 +94,7 @@ img{
 .clicking-bar{
     display: none;
 }
+
 
 /*============================================= */
 
@@ -144,6 +146,9 @@ img{
     flex-direction: column;
     align-items: center;
 }
+.mainmenu h1{
+    padding-top: 3rem;
+}
 img{
     border-radius: 2%;
 box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
@@ -174,6 +179,7 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
+    
 }
 .video-content{
     display: flex;
@@ -181,6 +187,10 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     padding: 2rem 2rem;
     align-items: center;
    
+}
+video{
+    width: 90%;
+    height: auto;
 }
 
 /*--------WEB PAGE DECORATION ---------------*/
@@ -196,12 +206,26 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     flex-direction: column;
     align-items: center;
     padding: 2rem 2rem;
-    background-image: url(../Medias/image-contact-background.jpg);
     
 }
-.contact h3{
-    padding-bottom: 4rem;
+.information{
+    height: 80vh;
+    width: 70vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
 }
+
+.contact a{
+    color: rgb(0, 0, 0);
+}
+.contact a:hover{
+    color: rgb(255, 172, 172);
+}
+
+
 
 
 
@@ -251,6 +275,7 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
         transform: translateX(-100%);
         transition: transform 0.5s ease-out;
         flex-direction: column;
+    
     }
 
     .clicking-bar{
