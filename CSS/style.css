@@ -141,17 +141,25 @@ img{
 }
 
 /*---------MAIN PAGE DECORATION ---------*/
-.mainmenu main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .mainmenu h1{
     padding-top: 3rem;
 }
 img{
     border-radius: 2%;
 box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
+}
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.main-page h3{
+    padding: 1.5rem;
+}
+.main-page p{
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 /*---------PHOTOS PAGE DECORATION ---------*/
@@ -198,6 +206,10 @@ video{
     flex-direction: column;
     align-items: center;
     padding: 2rem 2rem;
+}
+.web h2{
+    padding-top: 3rem;
+    padding-bottom: 1.4rem;
 }
 
 
