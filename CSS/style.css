@@ -8,6 +8,7 @@
     --color-for-cursor-border: #5ecbc4;
     --color-for-cursor-dot: #ffffff;
     --color-for-pictures-hover: #71ecff;
+    --color-for-titles: #a4ffeb;
 
     --text-color: #000000;
 }
@@ -144,10 +145,7 @@ img{
 .mainmenu h1{
     padding-top: 3rem;
 }
-img{
-    border-radius: 2%;
-box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
-}
+
 .main-page{
     display: flex;
     flex-direction: column;
@@ -161,12 +159,22 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     padding-left: 3vw;
     padding-right: 3vw;
 }
+.about,
+.experience,
+.hobbies {
+    background-color: var(--color-for-titles);
+    border-radius: 20%;
+}
 
 /*---------PHOTOS PAGE DECORATION ---------*/
 .photos{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+img{
+    border-radius: 2%;
+box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
 }
 .pictures{
     display: flex;
@@ -192,7 +200,7 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
 .video-content{
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem;
+    padding: 3rem 3rem;
     align-items: center;
    
 }
