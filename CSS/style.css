@@ -9,6 +9,7 @@
     --color-for-cursor-dot: #ffffff;
     --color-for-pictures-hover: #71ecff;
     --color-for-titles: #a4ffeb;
+    --color-for-contactBackground: #abf4ff;
 
     --text-color: #000000;
 }
@@ -40,7 +41,7 @@ body{
 
 main{
 background-color:var(--color-for-main);
-min-height: 130vh;
+min-height: 100vh;
 }
 
 footer{
@@ -189,7 +190,7 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
 /*---------PHOTOS PAGE DECORATION SECTION LINK TO PORTFOLIO ---------*/
 .link{
     width: 100vw;
-    height: 16vh;
+    height: 15vh;
     background-color: var(--color-for-header);
     color: aliceblue;
 
@@ -245,17 +246,26 @@ video{
 .contact{
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    padding-top: 9rem;
+    
     
 }
 .information{
-    height: 80vh;
-    width: 70vw;
+    height: 350px;
+    width: 250px;
+    background-color: var(--color-for-contactBackground);
+    border-radius: 10%;
+
 
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
     align-items: center;
+}
+.information h2{
+    padding: 2rem 0 4rem 0;
+}
+.information p{
+    padding-bottom: 1.5rem;
 }
 
 .contact a{
