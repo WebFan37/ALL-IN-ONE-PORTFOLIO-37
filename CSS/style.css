@@ -186,7 +186,27 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     background-color:var(--color-for-pictures-hover);
     transition: background-color 1.2s;
 }
+/*---------PHOTOS PAGE DECORATION SECTION LINK TO PORTFOLIO ---------*/
+.link{
+    width: 100vw;
+    height: 16vh;
+    background-color: var(--color-for-header);
+    color: aliceblue;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.link h3{
+    padding-bottom: 3vh;
+}
+.link a{
+    color: antiquewhite;
+}
+.link a:hover{
+    color: #ffabab;
+}
 
 /*---------VIDEOS PAGE DECORATION ---------*/
 .videos{
