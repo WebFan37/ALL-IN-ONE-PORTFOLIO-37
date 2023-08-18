@@ -143,7 +143,7 @@ img{
 
 /*---------MAIN PAGE DECORATION ---------*/
 .mainmenu h1{
-    padding-top: 3rem;
+    padding-top:7rem;
 }
 
 .main-page{
@@ -159,12 +159,7 @@ img{
     padding-left: 3vw;
     padding-right: 3vw;
 }
-.about,
-.experience,
-.hobbies {
-    background-color: var(--color-for-titles);
-    border-radius: 20%;
-}
+
 
 /*---------PHOTOS PAGE DECORATION ---------*/
 .photos{
@@ -180,9 +175,12 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding-bottom: 2rem;
     height: auto;
     width: 100%;
+}
+.pictures:nth-child(1){
+    padding-top: 13vh;
 }
 .pictures:hover{
     background-color:var(--color-for-pictures-hover);
@@ -200,9 +198,11 @@ box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
 .video-content{
     display: flex;
     flex-direction: column;
-    padding: 3rem 3rem;
+    padding-bottom: 3rem;
     align-items: center;
-   
+}
+.video-content:nth-child(1){
+    padding-top: 6rem;
 }
 video{
     width: 90%;
@@ -216,7 +216,7 @@ video{
     padding: 2rem 2rem;
 }
 .web h2{
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-bottom: 1.4rem;
 }
 
@@ -225,7 +225,7 @@ video{
 .contact{
     flex-direction: column;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 3rem;
     
 }
 .information{
