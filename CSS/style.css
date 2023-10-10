@@ -77,7 +77,9 @@ header {
     align-items:center;
 }
 .menu div{
-    padding: 10px 25px;
+    padding: 5px 10px;
+    height: 8vh;
+    width: 35vw;
 }
 .menu div:hover{
     color: white;
@@ -169,7 +171,7 @@ img{
     align-items: center;
 }
 img{
-    border-radius: 2%;
+    border-radius: 4%;
 box-shadow: 3px 3px 5px rgba(28, 125, 125, 0.909);
 }
 .pictures{
@@ -261,6 +263,7 @@ video{
     flex-direction: column;
     align-items: center;
 }
+
 .information h2{
     padding: 2rem 0 4rem 0;
 }
@@ -273,6 +276,18 @@ video{
 }
 .contact a:hover{
     color: rgb(255, 172, 172);
+}
+
+/*-----------DESIGN PAGE -------------*/
+.design h2{
+    font-weight: bolder;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+.design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 

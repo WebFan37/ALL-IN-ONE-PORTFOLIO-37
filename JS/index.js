@@ -9,6 +9,8 @@ let webPage = document.querySelector(".web");
 
 let contactPage = document.querySelector(".contact");
 
+let designPage = document.querySelector(".design");
+
 
 
 //ELEMENTS IN MENU BAR
@@ -17,6 +19,7 @@ let buttonPhotos = document.querySelector(".menu > div:nth-of-type(2)");
 let buttonVideos = document.querySelector(".menu > div:nth-of-type(3)");
 let buttonWeb = document.querySelector(".menu > div:nth-of-type(4)");
 let buttonContact = document.querySelector(".menu > div:nth-of-type(5)");
+let buttonDesign = document.querySelector(".menu > div:nth-of-type(6)");
 
 
 
@@ -26,6 +29,7 @@ buttonPhotos.addEventListener("click", loadPhotosPage);
 buttonVideos.addEventListener("click", loadVideosPage);
 buttonWeb.addEventListener("click", loadWebPage);
 buttonContact.addEventListener("click", loadContactPage);
+buttonDesign.addEventListener("click", loadDesignPage);
 
 
 
@@ -37,6 +41,7 @@ function loadMainPage(){
    photosPage.style.display = "none";
    videoPage.style.display = "none";
    contactPage.style.display = "none";
+   designPage.style.display = "none";
 }
 function loadPhotosPage(){
     mainPage.style.display = "none";
@@ -44,6 +49,7 @@ function loadPhotosPage(){
    photosPage.style.display = "flex";
    videoPage.style.display = "none";
    contactPage.style.display = "none";
+   designPage.style.display = "none";
 }
 function loadVideosPage(){
     mainPage.style.display = "none";
@@ -51,6 +57,7 @@ function loadVideosPage(){
    photosPage.style.display = "none";
    videoPage.style.display = "flex";
    contactPage.style.display = "none";
+   designPage.style.display = "none";
 }
 function loadWebPage(){
     mainPage.style.display = "none";
@@ -58,6 +65,7 @@ function loadWebPage(){
    photosPage.style.display = "none";
    videoPage.style.display = "none";
    contactPage.style.display = "none";
+   designPage.style.display = "none";
 }
 
 function loadContactPage(){
@@ -66,6 +74,15 @@ function loadContactPage(){
     photosPage.style.display = "none";
     videoPage.style.display = "none";
     contactPage.style.display = "flex";
+    designPage.style.display = "none";
+}
+function loadDesignPage(){
+    mainPage.style.display = "none";
+    webPage.style.display = "none";
+    photosPage.style.display = "none";
+    videoPage.style.display = "none";
+    contactPage.style.display = "none";
+    designPage.style.display = "flex";
 }
 
 
